@@ -1,24 +1,29 @@
 # How to add virtual host in Ubuntu 16.04
 ____
 - step one. Content folder. Створимо папку в якій буде контент розміщуватися.
-  ```
+```
   sudo mkdir -p /var/www/lucku.less/public_html
 ```
 ___
 - step two. Access rights. Роздамо потрібні права.
-  ```
+
+```
   sudo chown -R $USER:$USER /var/www/lucku.less/public_html
 ```
 Змінна $USER тримає імя, активного на даний час, користувача
- ```
+
+```
  sudo chmod -R 755 /var/www
- ````
+````
 ____
 - step three. Create some content. Щоб мати змогу побачити що я начудив - потрібно створити якусь інфу.
+
 ```
   subl /var/www/lucku.less/public_html/index.html
 ```
+
 в відкрившомуся вікні треба вписати щось. Краще це:
+
 ```
 <html>
   <head>
