@@ -15,6 +15,7 @@ ____
 - step three. Create some content. Щоб мати змогу побачити що я начудив - потрібно створити якусь інфу.
   subl /var/www/lucku.less/public_html/index.html
 в відкрившомуся вікні треба вписати щось. Краще це:
+<pre>
 <html>
   <head>
     <title>Welcome to Example.com!</title>
@@ -23,6 +24,7 @@ ____
     <h1>Success!  The lucku.less virtual host is working!</h1>
   </body>
 </html>
+</pre>
 __
 - step four. Creating new host's files. Створюємо конфігурацію хоста. Є така фішка в апача - він по замовчуванню створює файл 000-default.conf його я й скопіюю
 sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/lucku.less.conf
