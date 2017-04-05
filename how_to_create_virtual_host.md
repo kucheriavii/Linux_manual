@@ -4,7 +4,7 @@ ____
 ```
   sudo mkdir -p /var/www/lucku.less/public_html
 ```
-___
+_______
 - step two. Access rights. Роздамо потрібні права.
 
 ```
@@ -15,7 +15,7 @@ ___
 ```
  sudo chmod -R 755 /var/www
 ````
-____
+___________
 - step three. Create some content. Щоб мати змогу побачити що я начудив - потрібно створити якусь інфу.
 
 ```
@@ -34,7 +34,7 @@ ____
   </body>
 </html>
 ```
-__
+__________________
 - step four. Creating new host's files. Створюємо конфігурацію хоста. Є така фішка в апача - він по замовчуванню створює файл 000-default.conf його я й скопіюю
 ```
 sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/lucku.less.conf
@@ -52,7 +52,7 @@ sudo subl /etc/apache2/sites-available/lucku.less.conf
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 ```
-__
+______________
 -step five. Swich on the host. Вмикаємо новий хост.
 ```
 sudo a2ensite lucku.less.conf
@@ -61,7 +61,7 @@ sudo a2ensite lucku.less.conf
 ```
 sudo service apache2 restart
 ```
-__
+_______________________
 - step six. Host options. Налаштування файла hosts
 ```
 sudo subl /etc/hosts
